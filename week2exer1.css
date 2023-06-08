@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Option 2: Import via CSS */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+button,
+a {
+  all: unset;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+}
+
+#hero {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background: linear-gradient(
+      89.79deg,
+      #ffffff 26.59%,
+      rgba(255, 255, 255, 0) 100.84%
+    ),
+    url("https://s3-alpha-sig.figma.com/img/0104/0b41/4a2bae6c8095e39629cd229e994357ac?Expires=1687132800&Signature=aYAwd136eYZ0LSNw4ndG2NfjEWU6B1F2SsUFIwfGJzPNIATzWwtNqlKxQU1AAqTi2hWNbzedAExl9py6a~Rfjcp6gT-WRuZgX7OGFn27IUxEMjO17L7PeQD~P26OcUZ3BTh3H~py7CA4Z1Wc9CM-tAXw65IcUkBxE6f0gUJRPalkCb0F3GRRcu7J1FwANatDtDZ7dwY4Lqte07JHh1i2gFce29aFt0CM6flwUuF4~TkCTVhs6GkGDBQlXhOuHH5ibG8viX-2Im5O9FFSTWmK2sfvfiCislWx2eoS~52qSfrjfJ6x8zHnn8BuY1cgVcaHQTFCu-w-G-AgJbnDUe1~eA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  height: 80px;
+}
+
+nav .left {
+  display: flex;
+  gap: 40px;
+}
+
+nav .left h1 {
+  font-weight: bold;
+}
+nav .right {
+  display: flex;
+  gap: 20px;
+}
+
+nav .menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav .menu li {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+button {
+  font-size: 0.8rem;
+}
+
+button.ghost {
+  color: white;
+  font-weight: medium;
+}
+
+button.solid {
+  color: white;
+  font-weight: medium;
+  background-color: #23a6f0;
+  padding: 12px 15px;
+  border-radius: 4px;
+}
+
+#content1 {
+  position: absolute;
+  top: 300px;
+
+  display: flex;
+}
+
+#content1 .left {
+  width: 500px;
+}
+
+#content1 .left h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+#content1 .left p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+#content1 .left button.solid {
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 20px 50px 20px 50px;
+  border-radius: 40px;
+  margin-right: 30px;
+}
+
+#content1 .left button.ghost {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #23a6f0;
+  padding: 20px 50px 20px 50px;
+  border-radius: 40px;
+  border: solid 1px;
+}
+
+#content1 .right {
+  width: 500px;
+}
+
+/* next scroll */
+
+#page2 {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#page2 .box {
+  width: 1000px;
+}
+
+#page2 .box1 {
+  width: 500px;
+}
+
+#page2 .box1 h2 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#page2 .box1 p {
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+#page2 .box2 {
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#page2 .sbox {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+#page2 .ssbox {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  color: #ffffff;
+  background-color: #23a6f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#page2 i {
+  font-size: 2rem;
+}
+
+#page2 .sbox p {
+  width: 100px;
+  font-weight: 600;
+}
+
+#page2 button.solid {
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 20px 50px 20px 50px;
+  border-radius: 40px;
+  margin-right: 30px;
+}
+
+#page2 button.ghost {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #23a6f0;
+  padding: 20px 50px 20px 50px;
+  border-radius: 40px;
+  border: solid 1px;
+}
+
+#page2 .box3 {
+  margin-top: 50px;
+}
+
+/* scroll page3 */
+
+#page3 {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#page3 .box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#page3 .box1 h1 {
+  font-weight: 700;
+}
+
+#page3 .box1 p {
+  width: 500px;
+  text-align: center;
+}
+
+#page3 .box2 {
+  display: flex;
+  margin-top: 30px;
+}
+#page3 .left {
+  display: flex;
+  margin-right: 200px;
+}
+
+#page3 .left img {
+  width: 130px;
+  height: 300px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+#page3 .left2 h3 {
+  font-weight: 700;
+}
+
+#page3 .left2 i {
+  color: rgba(231, 124, 64, 1);
+}
+
+#page3 .left2 {
+  width: 250px;
+}
+
+#page3 .right {
+  display: flex;
+}
+
+#page3 .right img {
+  width: 130px;
+  height: 300px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+#page3 .right2 h3 {
+  font-weight: 700;
+}
+
+#page3 .right2 i {
+  color: rgba(231, 124, 64, 1);
+}
+
+#page3 .right2 {
+  width: 250px;
+}
+
+/* newsletter */
+
+#newsletter {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 260px;
+  background-color: rgba(37, 43, 66, 1);
+}
+
+#newsletter .box1 {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#newsletter h1 {
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+#newsletter p {
+  color: #ffffff;
+}
+
+#newsletter .box2 {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#newsletter input {
+  height: 3.125rem;
+  padding: 0.125rem;
+  padding-left: 1rem;
+  width: 50%;
+  font-size: 16px;
+  border: 1px solid white;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#newsletter button {
+  height: 3.125rem;
+  width: 25%;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #23a6f0;
+  color: white;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* footer */
+
+#footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#footer .box2 i {
+  margin-left: 25px;
+  color: #23a6f0;
+}
