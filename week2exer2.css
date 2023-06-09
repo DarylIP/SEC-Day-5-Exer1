@@ -1,8 +1,10 @@
+/* Option 2: Import via CSS */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  border: solid red 1px;
 }
 
 html,
@@ -50,6 +52,10 @@ section {
   font-weight: 400;
 }
 
+#nav .right i {
+  display: none;
+}
+
 .right li:hover {
   background-color: grey;
   cursor: pointer;
@@ -78,16 +84,17 @@ section {
 }
 
 button {
-  background-color: #8eadd5;
+  background-color: rgba(142, 173, 213, 1);
   color: white;
   font-family: "Inter";
   font-size: 600;
   padding: 12px 15px;
   border-radius: 8px;
   width: 30%;
+  cursor: pointer;
 }
 
-img {
+#box1 img {
   position: absolute;
   right: 0%;
 }
@@ -95,10 +102,25 @@ img {
 #nav1 {
   width: 100%;
   height: 175px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   font-style: light;
   font-size: 16px;
   font-weight: 300;
+}
+
+#nav1 .links {
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#box2 {
+  margin-top: 30px;
 }
 
 #box2 .left {
@@ -138,4 +160,316 @@ img {
   position: absolute;
   top: 60%;
   left: 24%;
+}
+
+#box3 .custom {
+  margin-top: 15%;
+  font-style: bold;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#box3 .pbox3 {
+  width: 63%;
+}
+
+#box3 .right img {
+  position: relative;
+  left: 25%;
+}
+
+#box4 {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#box4 .testimonials {
+  text-align: center;
+  font-weight: 400;
+}
+
+#box4 .read {
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+  width: 500px;
+  margin-bottom: 50px;
+}
+
+.personbox {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+#box4 img {
+  display: block;
+  margin: 0 auto;
+}
+
+#box4 .name {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 25px;
+}
+
+#box4 .desc {
+  width: 330px;
+  text-align: center;
+}
+
+#box5 {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#box5 img {
+  display: block;
+  margin-top: 50px;
+}
+.box5right {
+  width: 370px;
+}
+#box5 .be {
+  margin-top: 120px;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+#box5 button {
+  margin-top: 50px;
+  background-color: rgba(142, 173, 213, 1);
+  color: white;
+  font-family: "Inter";
+  font-size: 600;
+  padding: 12px 15px;
+  border-radius: 8px;
+  width: 50%;
+  cursor: pointer;
+}
+
+#box6 {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#box6 p {
+  margin-top: 25px;
+  font-weight: 300;
+}
+
+#box6 .sbox6 {
+  margin-bottom: 90px;
+}
+
+#footer {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+
+/* mobile iphone 12*/
+@media (max-width: 850px) {
+  section {
+    margin: 20px;
+  }
+
+  #nav .right .menu {
+    display: none;
+  }
+  #nav .right i {
+    display: flex;
+  }
+  #nav .right {
+    width: 17%;
+  }
+  #nav .right i {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  #box1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #box1 .left {
+    text-align: center;
+    width: 100%;
+    display: inline;
+    padding-right: 0;
+    padding-top: 0;
+  }
+  #box1 .left h1 {
+    font-size: 2rem;
+  }
+  #box1 .left p {
+    padding-top: 20px;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  #box1 button {
+    margin-top: 10px;
+    width: auto;
+  }
+  #box1 .right {
+    width: 100%;
+  }
+  #box1 img {
+    margin-top: 50px;
+    width: 80%;
+    right: 10%;
+  }
+
+  #nav1 {
+    margin-top: 200px;
+    width: 90%;
+    height: 175px;
+  }
+  #nav1 img {
+    width: 70%;
+  }
+  #box2 {
+    flex-direction: column-reverse;
+    margin: 10;
+    padding-left: 0%;
+    padding-top: 0%;
+  }
+  #box2 .right {
+    width: 100%;
+    padding-left: 0%;
+    padding-top: 0%;
+  }
+
+  .Branding {
+    position: relative;
+    top: 20%;
+    font-size: 2rem;
+
+    text-align: center;
+  }
+
+  .Commonly {
+    position: relative;
+    top: 30%;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  #box2 .right-arrow-alt {
+    position: relative;
+    top: 50%;
+    left: 45%;
+    width: 8%;
+    transform: rotate(90deg);
+  }
+
+  .box2img {
+    position: relative;
+    left: 0%;
+    top: 30%;
+    width: 200%;
+  }
+
+  #box3 {
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    height: 700px;
+    margin-top: 100px;
+  }
+  #box3 .custom {
+    position: relative;
+    font-size: 2rem;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    top: 12%;
+    left: -15%;
+  }
+
+  #box3 .pbox3 {
+    position: relative;
+    font-size: 0.8rem;
+    width: 350px;
+    height: 200px;
+    text-align: center;
+    top: -5%;
+    left: 0%;
+  }
+
+  #box3 .left img {
+    position: relative;
+    top: -25%;
+    left: 80%;
+    width: 15%;
+    transform: rotate(90deg);
+  }
+
+  #box3 .right img {
+    position: relative;
+    left: -100%;
+    top: 50%;
+    width: 170%;
+  }
+
+  #box4 {
+    margin-top: 25%;
+    height: 1200px;
+  }
+
+  #box4 .testimonials {
+    text-align: center;
+    font-weight: 400;
+  }
+
+  #box4 .read {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    width: 400px;
+  }
+
+  .personbox {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  #box5 img {
+    display: none;
+  }
+  .box5right {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #box5 .be {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  #box6 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 1200px;
+  }
+
+  #box6 .sbox6 {
+    margin-bottom: 0px;
+  }
 }
